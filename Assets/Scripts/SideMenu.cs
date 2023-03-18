@@ -21,5 +21,4 @@ public class SideMenu : MonoBehaviour
             _animator.SetTrigger("Hide");
         }
     }
-
 }
