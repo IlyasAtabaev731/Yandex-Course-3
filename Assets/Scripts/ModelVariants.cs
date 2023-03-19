@@ -9,6 +9,10 @@ public class ModelVariants : MonoBehaviour
     [SerializeField] private GameObject[] _models;
     [SerializeField] private TMP_Dropdown _dropdown;
     private GameObject _currentSelected;
+    public GameObject CurrentSelected
+    {
+        get { return _currentSelected; }
+    }
 
     private void Start()
     {
@@ -32,5 +36,4 @@ public class ModelVariants : MonoBehaviour
         _currentSelected = _models[index];
         _currentSelected.SetActive(true);
     }
-
 }

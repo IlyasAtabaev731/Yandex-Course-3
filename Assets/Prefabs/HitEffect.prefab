@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 6921944012453326648}
   - component: {fileID: 1970490201164638147}
   - component: {fileID: 4747475793800192005}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Canvas
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -112,7 +112,7 @@ GameObject:
   - component: {fileID: 5073589897227175131}
   - component: {fileID: 4044002404929089935}
   - component: {fileID: 7756365865135378593}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Text (TMP)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -246,7 +246,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4719077703333846514}
   - component: {fileID: 7208510881644287311}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: HitEffect
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -292,7 +292,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2175823652443868171}
   - component: {fileID: 4603164088729455615}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Animated
   m_TagString: Untagged
   m_Icon: {fileID: 0}

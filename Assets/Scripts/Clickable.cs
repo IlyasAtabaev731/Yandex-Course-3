@@ -7,18 +7,19 @@ public class Clickable : MonoBehaviour
 {
 
     [SerializeField] private AnimationCurve _scaleCurve;
+    [SerializeField] private GoldCreator _goldCreator;
+    [SerializeField] private int _goldNumber = 3;
     [SerializeField] private float _scaleTime = 0.25f;
-    [SerializeField] private HitEffect _hitEffectPrefab;
-    [SerializeField] private Resources _resources;
 
     private int _coinsPerClick = 1;
 
     // ����� ���������� �� Interaction ��� ����� �� ������
     public void Hit()
     {
-        HitEffect hitEffect = Instantiate(_hitEffectPrefab, transform.position, Quaternion.identity);
-        hitEffect.Init(_coinsPerClick);
-        _resources.CollectCoins(1, transform.position);
+        for (int i = 0; i < _goldNumber; i++)
+        {
+            _goldCreator.CreateThrowedGold();
+        }
         StartCoroutine(HitAnimation());
     }
 
